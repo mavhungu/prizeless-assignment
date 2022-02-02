@@ -1,12 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: RONEWA
- * Date: 4/17/2018
- * Time: 11:24 AM
- */
-?>
-<?php
 
 // connect to the database
 include('connect-db.php');

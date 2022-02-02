@@ -1,12 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: RONEWA
- * Date: 4/17/2018
- * Time: 11:23 AM
- */
-?>
-<?php
 /*
 Allows the user to both create new records and edit existing records
 */
