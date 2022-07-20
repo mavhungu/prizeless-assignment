@@ -10,7 +10,6 @@ $db = '';
 $mysqli = new mysqli($server,$user,$pass,$db);
 
 //show error (remove this line if on live site)
-mysqli_report(MYSQLI_REPORT_ERROR);
-
+//mysqli_report(MYSQLI_REPORT_ERROR);
 
 ?>
