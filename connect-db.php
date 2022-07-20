@@ -5,12 +5,11 @@ require_once realpath(__DIR__ . '/vendor/autoload.php');
 $userName = $_ENV['HOME'];
 
 echo $userName; //Pretoria
-
 //server info
-$server = 'localhost';
-$user = 'root';
-$pass = 'mysql';
-$db = 'opex';
+$server = '';
+$user = '';
+$pass = '';
+$db = '';
 
 //connect to the database
 $mysqli = new mysqli($server, $user, $pass, $db);
