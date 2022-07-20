@@ -3,3 +3,6 @@ records2.sql
 outCSS&JS/
 .vscodes
 .vscode
+/vendor
+/node_modules
+*.env

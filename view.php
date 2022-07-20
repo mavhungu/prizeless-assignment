@@ -12,31 +12,26 @@
 
     <div class="container">
         <div class="col-md-12">
-
             <h1>View Records</h1>
-
             <p><b>View All</b> | <button class="btn"><a href="view-paginated.php">View Paginated</a></button></p>
-
             <?php
             // connect to the database
             include('connect-db.php');
-
             // get the records from the database
             if ($result = $mysqli->query("SELECT * FROM  contacts ORDER BY id")) {
                 // display records if there are records to display
                 if ($result->num_rows > 0) {
                     // display records in a table
                     echo "<table class='table table-responsive table-hover'>";
-
                     // set table headers
                     echo "<thead class='bg-primary'>
-                <tr>
-                <th>ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th colspan='2'>Action</th>
-                </tr>
-              </thead>";
+                            <tr>
+                                <th>ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th colspan='2'>Action</th>
+                            </tr>
+                        </thead>";
 
                     while ($row = $result->fetch_object()) {
                         // set up a row for each record
@@ -62,13 +57,10 @@
                 echo "Error: " . $mysqli->error;
                 echo "<br/><br/>";
             }
-
             // close database connection
             $mysqli->close();
-
             ?>
-
-            <button class="btn btn-outline-primary"><a href="index.php">Add New Record</a></button>
+            <a href="index.php" class="btn btn-outline-primary">Add New Record</a>
         </div>
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>

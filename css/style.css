@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
 
@@ -28,13 +29,12 @@ table{
 }
 */
 
-/*a:hover{
-    background-color: #191;
+a:hover{
     text-decoration: none;
 }
 a:active{
     background-color: lightgreen;
-}*/
+}
 .div-form{
     text-align: center;
 }
